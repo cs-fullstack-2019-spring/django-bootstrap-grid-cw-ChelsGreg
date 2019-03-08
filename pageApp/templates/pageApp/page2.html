@@ -1,0 +1,37 @@
+{% extends 'pageApp/base.html' %}
+{% load static %}
+
+<!--container color-->
+{% block style%}
+<style>
+    div {background-color: darkolivegreen;}
+</style>
+{% endblock style %}
+
+<!--header-->
+{% block header%}
+<h4>Page</h4>
+<h1>Two</h1>
+{% endblock header %}
+
+
+<!--section-->
+{% block section%}
+<p>Angela Davis</p>
+<p>Radical simply means "grasping things at the root.
+</p>
+<p>We have to talk about liberating minds as well as liberating society.
+</p>
+<p>I decided to teach because I think that any person who studies philosophy has to be involved actively.
+</p>
+<p>Racism, in the first place, is a weapon used by the wealthy to increase the profits they bring in by paying Black workers less for their work.
+</p>
+
+{% endblock section %}
+
+
+<!--buttons-->
+{% block article%}
+<button><a href="{% url 'index'%}">Previous</a></button>
+<button><a href="{% url 'pageThree'%}">Next</a></button>
+{% endblock article%}

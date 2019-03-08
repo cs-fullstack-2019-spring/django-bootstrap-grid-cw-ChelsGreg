@@ -1,0 +1,36 @@
+{% extends 'pageApp/base.html' %}
+{% load static %}
+
+<!--container color-->
+{% block style %}
+<style>
+    div {background-color: darksalmon;}
+</style>
+{% endblock style %}
+
+
+<!--header-->
+{% block header%}
+    <h4>Page</h4>
+    <h1> One</h1>
+{% endblock header %}
+
+
+<!--section-->
+{% block section %}
+    <p>Audre Lorde</p>
+    <p>The master's tools will never dismantle the master's house.
+    </p>
+    <p>When I dare to be powerful, to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.
+    </p>
+    <p>It is not our differences that divide us. It is our inability to recognize, accept, and celebrate those differences.
+    </p>
+    <p>When we speak we are afraid our words will not be heard or welcomed. But when we are silent, we are still afraid. So it is better to speak.
+    </p>
+{% endblock section %}
+
+
+<!--buttons-->
+{% block article%}
+   <button><a href="{% url 'pageTwo' %}">Next</a></button>
+{% endblock article%}

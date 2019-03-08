@@ -1,0 +1,32 @@
+{% extends 'pageApp/base.html' %}
+{% load static %}
+
+<!--container color-->
+{% block style%}
+<style>
+    div {background-color: darkcyan;}
+</style>
+{% endblock style %}
+
+<!--header-->
+{% block header%}
+    <h4>Page</h4>
+    <h1>Three</h1>
+{% endblock header %}
+
+
+<!--section-->
+{% block section%}
+    <p>Maya Angelou</p>
+    <p>I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.</p>
+    <p>Nothing will work unless you do.</p>
+    <p>If you don't like something, change it. If you can't change it, change your attitude.</p>
+    <p>We delight in the beauty of the butterfly, but rarely admit the changes it has gone through to achieve that beauty.
+    </p>
+{% endblock section %}
+
+
+<!--buttons-->
+{% block article%}
+    <button><a href="{% url 'pageTwo'%}">Previous</a></button>
+{% endblock article%}
